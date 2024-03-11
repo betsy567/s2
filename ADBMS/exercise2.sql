@@ -1,0 +1,17 @@
+-- use company;
+-- select distinct country_name from countries;
+-- select email,phone_number from employees;
+-- select * from employees where last_name='Fay';
+-- select hire_date from employees where last_name='Grant'or last_name='Whalen';
+-- select first_name,last_name from employees where job_id=(select job_id from jobs where job_title='Shipping Clerk');
+-- select first_name from employees where department_id=8;
+-- select department_name from dept order by department_name desc;
+-- select first_name,last_name from employees where last_name like 'k%';
+-- select first_name,last_name from employees where year(hire_date)between '1995'and'1997';
+-- select job_title from jobs where max_salary < 6000;
+-- select lcase(email) from employees; 
+-- select first_name,last_name from employees where year(hire_date)='1995';
+-- INSERT INTO employees (employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id)VALUES(207,'Paul','Newton','paul.newton@sqltutorial.org','515.124.4169','1994-08-12',12,9000.00,108,11);
+-- delete from dept where department_name='Shipping';
+-- select department_name from dept;
+select * from employees where dayname(hire_date)='Thursday';

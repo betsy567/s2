@@ -1,0 +1,63 @@
+import java.util.Scanneer;
+public class matadd{
+	public static void main(String args[]){
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter number of rows and columns:");
+		int m=sc.nextInt();
+		int n=sc.nextInt();
+		System.out.println("Enter rows and columns of second matrix:");
+		int p=sc.nextInt();
+		int q=sc.nextInt();
+		if(m==p || n==q){
+			System.out.println("same size");
+			return;
+		}
+		int[][] a=new a[m][n];
+		int[][] b=new b[p][q];
+		int[][]c=new c[p][q];
+		System.out.println("Enter elements to matrix a:");
+		for(int i=0;i<m;i++){
+			for (int j=0;j<n;j++){
+				a[i][j]=sc.nextInt();
+			}
+		}
+		System.out.println("Enter elements to matrix b:");
+		for(int i=0;i<p;i++){
+			for (int j=0;j<q;j++){
+				b[i][j]=sc.nextInt();
+			}
+		}
+		System.out.println("First matrix:");
+		for(int i=0;i<m;i++){
+			for (int j=0;j<n;j++){
+				System.out.print(a[i][j]+" ");
+			}
+			System.out.println();
+		}
+		System.out.println("Second matrix:");
+		for(int i=0;i<p;i++){
+			for (int j=0;j<q;j++){
+				System.out.print(b[i][j]+" ");
+			}
+			System.out.println();
+		}
+		for(int i=0;i<m;i++){
+			for(int j=0;j<q;j++){
+				for(int k=0;k<n;k++){
+					c[i][j]=a[i][j]+b[i][j];
+				}
+			}
+		}
+		System.out.println("Added matrix:");
+		for(int i=0;i<m;i++){
+			for(int j=0;j<q;j++){
+				System.out.print(c[i][j]+" ");
+			}
+			System.out.println();
+		}
+		boolean isSymmetric=true;
+		for(int i=0;i<m;i++){
+			for(int j=0;j<n;j++){
+				if(a[i][j]!=
+		
