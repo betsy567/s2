@@ -15,3 +15,4 @@
 -- delete from dept where department_name='Shipping';
 -- select department_name from dept;
 select * from employees where dayname(hire_date)='Thursday';
+USE COMPANY;
